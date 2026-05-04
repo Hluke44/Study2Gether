@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url('../images/17973903.jpg');
+    background-size: cover;
+    color: white;
+}
+
+/* ================= NAVBAR ================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid orange;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+}
+
+.logo span {
+    color: white;
+}
+
+.user-box {
+    background: rgba(0,0,0,0.7);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid orange;
+}
+
+/* ================= MAIN LAYOUT ================= */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+}
+
+/* LEFT CONTENT */
+.content {
+    max-width: 550px;
+}
+
+.content h1 {
+    font-size: 45px;
+}
+
+.content span {
+    color: orange;
+}
+
+.content p {
+    margin-top: 15px;
+    color: #ddd;
+    line-height: 1.5;
+}
+
+/* ================= BUTTON ================= */
+.btn {
+    background: orange;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: darkorange;
+}
+
+/* ================= CALENDAR CARD ================= */
+.calendar-card {
+    width: 320px;
+    background: rgba(0,0,0,0.75);
+    border: 1px solid orange;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.calendar-card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.calendar-card p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 8px 0;
+}
+
+.calendar-card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: orange;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.calendar-card a:hover {
+    background: darkorange;
+}
+
+/* ================= DASHBOARD CARDS ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 60px;
+}
+
+.card {
+    background: rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid orange;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.card a {
+    margin-top: 15px;
+    display: inline-block;
+    background: orange;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: darkorange;
+}
+
+/* ================= FORMS (LOGIN / REGISTER) ================= */
+.form-box {
+    width: 350px;
+    background: rgba(0,0,0,0.85);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid orange;
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid orange;
+    background: transparent;
+    color: white;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.form-box button:hover {
+    background: darkorange;
+}
+
+/* ================= FOOTER ================= */
+
+/* ORANGE LINE ABOVE FOOTER */
+.footer-separator {
+    width: 100%;
+    height: 2px;
+    background: orange;
+    margin-top: 50px;
+    opacity: 0.7;
+}
+
+/* FOOTER WRAPPER */
+.footer {
+    width: 100%;
+    background: rgba(0,0,0,0.92);
+    padding: 30px 0;
+}
+
+/* CENTER EVERYTHING */
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* TITLE */
+.footer-center h3 {
+    color: orange;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* TEXT */
+.footer-center p {
+    color: #aaa;
+    font-size: 12px;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+/* LINKS ROW */
+.footer-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #888;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+/* BOTTOM COPYRIGHT */
+.footer-bottom {
+    font-size: 10px;
+    color: #666;
+
+
+}.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid orange;
+    transition: 0.3s ease;
+}
+
+/* hover effect */
+.search-box:hover {
+    box-shadow: 0 0 10px orange;
+    transform: scale(1.02);
+}
+
+/* input field */
+.search-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 260px;
+    font-size: 14px;
+}
+
+/* placeholder text */
+.search-box input::placeholder {
+    color: #bbb;
+}
+
+/* search button */
+.search-box button {
+    background: orange;
+    border: none;
+    padding: 7px 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+/* button hover */
+.search-box button:hover {
+    background: darkorange;
+    transform: scale(1.05);
+}
+
+/* focus effect when typing */
+.search-box input:focus {
+    border-bottom: 1px solid orange;
+}
+.home-btn {
+    display: inline-block;
+    background: rgba(0,0,0,0.7);
+    border: 1px solid orange;
+    color: orange;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background: orange;
+    color: black;
+    transform: scale(1.05);
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.profile-card {
+    width: 520px;
+    background: rgba(0,0,0,0.88);
+    border: 1px solid orange;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: orange;
+}
+
+.info {
+    text-align: left;
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.8;
+}
+
+.section {
+    margin-top: 15px;
+    border-top: 1px solid orange;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.badge {
+    background: orange;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Upload button */
+.upload-form {
+    margin-top: 10px;
+}
+
+.upload-form input {
+    color: white;
+}
+
+.upload-btn {
+    margin-top: 8px;
+    background: orange;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
